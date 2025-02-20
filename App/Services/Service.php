@@ -10,8 +10,6 @@ abstract class Service extends AbstractService
     protected function di (): array
     {
         return [
-            'db' => new PdoConnect(config()->database->{$this->dbName}),
-            'cache' => 'test property',
         ];
     }
 }
